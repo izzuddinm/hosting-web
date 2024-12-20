@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bahasa Pemrograman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #007bff;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            border-bottom: 5px solid #ffcc00;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #ffcc00;
+            padding: 15px 30px;
+            color: black;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff9900;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #f8f8f8;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .feature-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: #f1f1f1;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .testimonial-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Belajar Bahasa Pemrograman</h1>
+                <p>Pelajari berbagai bahasa pemrograman untuk memulai perjalanan karir sebagai developer profesional.</p>
+                <a href="#services" class="cta-button">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Bahasa Pemrograman Terpopuler</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Python</h3>
+                    <p>Python adalah bahasa pemrograman yang mudah dipelajari dan digunakan dalam banyak bidang, mulai dari web development hingga analisis data.</p>
+                </div>
+                <div class="service-card">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript adalah bahasa utama untuk pengembangan web interaktif, memungkinkan pembuatan aplikasi web dinamis di sisi klien.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Java</h3>
+                    <p>Java adalah bahasa pemrograman yang digunakan di berbagai platform dan aplikasi, dikenal karena stabilitas dan skalabilitasnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Kenapa Belajar Bahasa Pemrograman?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Mudah Dipelajari</h3>
+                    <p>Bahasa pemrograman seperti Python sangat mudah dipelajari untuk pemula, dengan sintaksis yang jelas dan sederhana.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Versatilitas</h3>
+                    <p>Bahasa pemrograman dapat digunakan di berbagai bidang, dari pengembangan aplikasi mobile, website, hingga analisis data besar.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Peluang Karir</h3>
+                    <p>Dengan kemampuan pemrograman, Anda dapat membuka banyak peluang karir, baik sebagai freelancer atau bekerja di perusahaan besar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimoni Pembelajar</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Saya baru memulai belajar Python, dan bahasa ini sangat mudah dipelajari! Saya sudah mulai membangun proyek saya sendiri."</p>
+                    <h3>Anna - Pemula Python</h3>
+                </div>
+                <div class="testimonial-card">
+                    <p>"JavaScript membuat web development terasa menyenangkan. Saya sudah mengembangkan aplikasi web interaktif pertama saya!"</p>
+                    <h3>Budi - Web Developer</h3>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Belajar Java membuka banyak kesempatan dalam pengembangan aplikasi besar. Saya sekarang bekerja di perusahaan teknologi besar."</p>
+                    <h3>Citra - Developer Java</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Belajar Bahasa Pemrograman. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
